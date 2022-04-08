@@ -1,14 +1,12 @@
 
 package com.company;
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Main {
     //Método auxiliar para imprimir matriz - Para comprobar que está bien
-    public static void imprimirMatriz(int[][] matriz){
-        for (int i = 0; i < matriz.length; i++){
-            for(int j = 0; j < matriz[0].length; j++){
+    public static void imprimirMatriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for(int j = 0; j < matriz[0].length; j++) {
                 System.out.print(matriz[i][j]+" ");
             }
             System.out.println("\n");
@@ -27,12 +25,10 @@ public class Main {
         int[][] matriz = new int[filas][columnas];
 
         System.out.println("Introduce los numeros del array:");
-        for (int i = 0; i < matriz.length; i++){
-            for (int j = 0; j < matriz[i].length; j++){
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
                 matriz[i][j] = sc.nextInt();
-
             }
-
         }
 
         imprimirMatriz(matriz);
